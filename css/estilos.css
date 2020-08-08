@@ -2,17 +2,140 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-size: 1.6rem;
 }
 
+
 /*Globales*/
-  
+
 
 /*Utilidades*/
 
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
 
+.centrar-texto {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+}
+
+
+/* Botones */
+
+.btn {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: .8rem 5rem;
+    margin: 1rem 1rem;
+    border-radius: .2rem;
+    text-decoration: none;
+    line-height: 1!important;
+}
+
+.btn-primary {
+    background-color: #fff5e9;
+    color: #402e32;
+}
+
+.btn-secundary {
+    border: 3px solid #fff5e963;
+    color: #fff5e9;
+}
+
+
+/* Site - Header */
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: .5;
+    color: #fff5e9;
+}
+
+.navbar {
+    background: #fff5e9e7;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+}
+
+.navbar a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #402e32;
+    padding: 1.2rem 0;
+    font-size: 1.4rem;
+}
+
+.bg-header {
+    height: 100vh;
+    background-image: url(../img/header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-header {
+    color: white;
+    line-height: 2;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.contenido-header p:last-of-type {
+    text-transform: lowercase;
+}
+
+
+/* CATEGORIAS */
+
+.categorias {
+    display: grid;
+    gap: 6rem 2rem;
+}
+
+@media (min-width: 768px) {
+    .categorias {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.categoria {
+    height: 20rem;
+    background-image: url(../img/categoria.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+}

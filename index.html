@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MYQ Mobiliaria</title>
+    <!-- Vinculo a Documentos CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <!-- Font Awesome Script-->
     <script src="https://kit.fontawesome.com/06beed5da1.js" crossorigin="anonymous"></script>
 </head>
@@ -12,43 +15,50 @@
 <body>
     <!--Aquí empieza el site-header-->
     <header class="site-header inicio">
-        <div class="top-header">
-            <h1><span>MYQ</span> Mobiliaria</h1>
-            <i class="fas fa-bars"></i>
+        <div class="fixed">
+            <div class="top-header contenedor">
+                <h1><span>MYQ</span> Mobiliaria</h1>
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="navbar">
+                <a href="#">Inicio</a>
+                <a href="#">Catalogo</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Contacto</a>
+            </nav>
         </div>
-        <nav class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Catalogo</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Contacto</a>
-        </nav>
-        <div class="contenido-header">
-            <h2>Lorem, ipsum dolor.</h2>
-            <a href="#">Button A</a>
-            <a href="#">Button B</a>
-            <h2> Lorem ipsum, quia accusamus.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo nam aliqua!</p>
+        <div class="bg-header contenido-header">
+            <div class="contenedor">
+                <h2>Lorem, ipsum dolor.</h2>
+                <a href="#" class="btn btn-secundary">Button A</a>
+                <a href="#" class="btn btn-primary">Button B</a>
+                <h2> Lorem ipsum, lrem ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo nam aliqua!</p>
+
+            </div>
         </div>
     </header>
     <!--Aquí termina el site-header-->
 
 
     <!--Aquí empieza la sección categorias-->
-    <section class="categorias">
-        <h2>Categorias</h2>
-        <div class="categoria">
-            <div class="bg-imagen">
-                <h3>Categoria</h3>
+    <section class="contenedor">
+        <h2 class="centrar-texto">Categorias</h2>
+        <div class="categorias">
+            <div class="categoria">
+                <div class="bg-imagen">
+                    <h3>Categoria</h3>
+                </div>
             </div>
-        </div>
-        <div class="categoria">
-            <div class="bg-imagen">
-                <h3>Categoria</h3>
+            <div class="categoria">
+                <div class="bg-imagen">
+                    <h3>Categoria</h3>
+                </div>
             </div>
-        </div>
-        <div class="categoria">
-            <div class="bg-imagen">
-                <h3>Categoria</h3>
+            <div class="categoria">
+                <div class="bg-imagen">
+                    <h3>Categoria</h3>
+                </div>
             </div>
         </div>
     </section>
