@@ -51,7 +51,7 @@ h4 {
 }
 
 .seccion {
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 
 .fw-300 {
@@ -91,6 +91,7 @@ h4 {
     border-radius: .5rem;
     text-decoration: none;
     line-height: 1!important;
+    font-weight: 700;
 }
 
 .btn-primary {
@@ -99,7 +100,7 @@ h4 {
 }
 
 .btn-primary:hover {
-    background-color: #402e32ec;
+    background-color: #352c2ee8;
     color: #fff5e9;
     transition: 1s;
 }
@@ -149,6 +150,34 @@ h4 {
     padding: 1.2rem 0;
     font-size: 1.2rem;
     border: 1px solid #402e322f;
+}
+
+.desk-navbar {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .top-header i,
+    .navbar {
+        display: none;
+    }
+    .desk-navbar {
+        display: initial;
+    }
+    .desk-navbar a {
+        color: #fff5e9;
+        text-decoration: none;
+        margin-right: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    .desk-navbar a:last-of-type {
+        margin-right: 0;
+    }
+    .desk-navbar a:hover {
+        color: #ff8e3db6;
+        transition: .5s;
+    }
 }
 
 .bg-header {
