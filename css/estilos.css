@@ -240,14 +240,15 @@ h4 {
     max-width: 70rem;
     margin: 4rem auto 6rem auto;
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 .cualidades {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .cualidad {
@@ -261,7 +262,19 @@ h4 {
         flex-direction: row;
     }
     .cualidad {
+        flex-basis: calc(50%);
+    }
+    .cualidad:first-child {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cualidad {
         flex-basis: calc(33.3% - 2rem);
+    }
+    .cualidad:first-child {
+        flex-basis: 33.3%;
     }
 }
 
@@ -276,4 +289,5 @@ h4 {
 .cualidad p {
     max-width: 30rem;
     margin: 3rem auto;
+    line-height: 1.5;
 }
