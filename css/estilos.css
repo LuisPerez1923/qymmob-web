@@ -140,6 +140,7 @@ h4 {
 }
 
 .navbar a {
+    /*display: none;*/
     width: 100%;
     text-align: center;
     text-decoration: none;
@@ -163,11 +164,16 @@ h4 {
 
 .contenido-header {
     color: white;
-    line-height: 2;
+    line-height: 1.5;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.contenido-header h3 {
+    max-width: 40rem;
+    margin: 5% auto;
 }
 
 .contenido-header p:last-of-type {
@@ -187,6 +193,12 @@ h4 {
 }
 
 @media (min-width: 768px) {
+    .categorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
     .categorias {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -215,4 +227,53 @@ h4 {
     margin-bottom: 1.5rem;
     margin-top: 0rem;
     transition: .5s;
+}
+
+
+/* CUALIDADES */
+
+.sobre-nosotros h2 {
+    text-transform: uppercase;
+}
+
+.texto-nosotros {
+    max-width: 70rem;
+    margin: 4rem auto 6rem auto;
+    text-align: center;
+    line-height: 2;
+}
+
+.cualidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cualidad {
+    flex-basis: calc(33.3% - 4rem);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .cualidades {
+        flex-direction: row;
+    }
+    .cualidad {
+        flex-basis: calc(33.3% - 2rem);
+    }
+}
+
+.cualidad h3,
+.cualidad i {
+    font-size: x-large;
+    color: #ff8e3d;
+    text-transform: uppercase;
+    line-height: 0;
+}
+
+.cualidad p {
+    max-width: 30rem;
+    margin: 3rem auto;
 }
