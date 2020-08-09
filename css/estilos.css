@@ -10,11 +10,32 @@ html {
 }
 
 body {
+    font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
 }
 
 
 /*Globales*/
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 2.0rem;
+}
 
 
 /*Utilidades*/
@@ -29,6 +50,26 @@ body {
     text-align: center;
 }
 
+.seccion {
+    margin-top: 4rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
 .no-margin {
     margin: 0;
 }
@@ -36,17 +77,18 @@ body {
 .fixed {
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 
 /* Botones */
 
 .btn {
-    display: inline-flex;
-    justify-content: space-between;
-    padding: .8rem 5rem;
+    display: inline-block;
+    width: 30rem;
+    padding: 1.5rem 8rem;
     margin: 1rem 1rem;
-    border-radius: .2rem;
+    border-radius: .5rem;
     text-decoration: none;
     line-height: 1!important;
 }
@@ -56,9 +98,21 @@ body {
     color: #402e32;
 }
 
+.btn-primary:hover {
+    background-color: #402e32ec;
+    color: #fff5e9;
+    transition: 1s;
+}
+
 .btn-secundary {
     border: 3px solid #fff5e963;
     color: #fff5e9;
+}
+
+.btn-secundary:hover {
+    background-color: #fff5e93d;
+    color: #fff5e9;
+    transition: 1s;
 }
 
 
@@ -68,8 +122,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: .5;
+    line-height: 1;
     color: #fff5e9;
+}
+
+.top-header span {
+    font-family: 'Russo One', sans-serif;
+    color: #ff8e3d;
 }
 
 .navbar {
@@ -87,7 +146,8 @@ body {
     text-transform: uppercase;
     color: #402e32;
     padding: 1.2rem 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    border: 1px solid #402e322f;
 }
 
 .bg-header {
@@ -111,11 +171,15 @@ body {
 }
 
 .contenido-header p:last-of-type {
-    text-transform: lowercase;
+    text-transform: none;
 }
 
 
 /* CATEGORIAS */
+
+.catalogo h2 {
+    text-transform: uppercase;
+}
 
 .categorias {
     display: grid;
@@ -129,8 +193,9 @@ body {
 }
 
 .categoria {
-    height: 20rem;
-    background-image: url(../img/categoria.jpg);
+    height: 25rem;
+    margin-top: 1.5rem;
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -138,4 +203,16 @@ body {
     align-items: center;
     text-transform: uppercase;
     color: white;
+    text-decoration: none;
+}
+
+.bg-imagen {
+    background-image: url(../img/categoria.jpg);
+}
+
+.categoria:hover {
+    filter: drop-shadow(-1px 5px 3px grey);
+    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+    transition: .5s;
 }

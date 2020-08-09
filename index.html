@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYQ Mobiliaria</title>
+    <title>QyM Mobiliario</title>
     <!-- Vinculo a Documentos CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Russo+One&display=swap" rel="stylesheet">
+    <!--Se implementaron las fuentes Lato (l-300,r-400,b-600,b-900) y Russo One (r-400)-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
     <!-- Font Awesome Script-->
@@ -17,7 +19,7 @@
     <header class="site-header inicio">
         <div class="fixed">
             <div class="top-header contenedor">
-                <h1><span>MYQ</span> Mobiliaria</h1>
+                <h1><span>Q&M</span> Mobiliario</h1>
                 <i class="fas fa-bars"></i>
             </div>
             <nav class="navbar">
@@ -29,11 +31,11 @@
         </div>
         <div class="bg-header contenido-header">
             <div class="contenedor">
-                <h2>Lorem, ipsum dolor.</h2>
-                <a href="#" class="btn btn-secundary">Button A</a>
-                <a href="#" class="btn btn-primary">Button B</a>
-                <h2> Lorem ipsum, lrem ipsum.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo nam aliqua!</p>
+                <h2>Empresa orgullosamente mexicana 🌵</h2>
+                <a href="#" class="btn btn-secundary">Contáctanos</a>
+                <a href="#" class="btn btn-primary">Catálogo</a>
+                <h2>Diseños unicos con la mejor calidad al mejor PRECIO!</h2>
+                <p>Hacemos muebles de todo tipo para escuelas.</p>
 
             </div>
         </div>
@@ -41,25 +43,28 @@
     <!--Aquí termina el site-header-->
 
 
-    <!--Aquí empieza la sección categorias-->
-    <section class="contenedor">
-        <h2 class="centrar-texto">Categorias</h2>
+    <!--Aquí empieza la sección catalogo-->
+    <section class="catalogo contenedor seccion">
+        <h2 class="centrar-texto fw-900">Nuestro Catálogo</h2>
         <div class="categorias">
-            <div class="categoria">
-                <div class="bg-imagen">
-                    <h3>Categoria</h3>
-                </div>
-            </div>
-            <div class="categoria">
-                <div class="bg-imagen">
-                    <h3>Categoria</h3>
-                </div>
-            </div>
-            <div class="categoria">
-                <div class="bg-imagen">
-                    <h3>Categoria</h3>
-                </div>
-            </div>
+            <a class="categoria bg-imagen" href="#">
+                <h3>Sillas</h3>
+            </a>
+            <a class="categoria bg-imagen" href="#">
+                <h3>Sillas Escolares</h3>
+            </a>
+            <a class="categoria bg-imagen" href="#">
+                <h3>Sillones Ejecutivos</h3>
+            </a>
+            <a class="categoria bg-imagen" href="#">
+                <h3>Mesas</h3>
+            </a>
+            <a class="categoria bg-imagen" href="#">
+                <h3>Mesas Escolares</h3>
+            </a>
+            <a class="categoria bg-imagen" href="#">
+                <h3>Archiveros</h3>
+            </a>
         </div>
     </section>
     <!--Aquí termina la sección categorias-->
@@ -88,7 +93,7 @@
                 <h3>Seguro</h3>
                 <img src="" alt="***aqui va una imagen">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aut ipsam exercitationem illum impedit nemo deleniti necessitatibus vero esse ex, sapiente reprehenderit nisi alias, sunt a? Nulla quo hic eum!</p>
-               
+
             </div>
 
             <div class="cualidad">
@@ -108,9 +113,14 @@
 
 
     <!--Aquí empieza el mapa-->
+
+    <!-- Comente el mapa porque me estiraba todo el diseno de arriba xd
     <section class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15056.106740380168!2d-99.01227627910356!3d19.36799718622412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e2b915834c71%3A0x3a02aeea52699f1a!2sAnastasio%2C%20Ermita%20Zaragoza%2C%20Iztapalapa%2C%2009180%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1596854957589!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15056.106740380168!2d-99.01227627910356!3d19.36799718622412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e2b915834c71%3A0x3a02aeea52699f1a!2sAnastasio%2C%20Ermita%20Zaragoza%2C%20Iztapalapa%2C%2009180%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1596854957589!5m2!1ses-419!2smx"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
+    -->
+
     <!--Aquí termina el mapa-->
 
 
@@ -132,7 +142,7 @@
                 <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
 
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" placeholder="Tu Teléfono" required> 
+                <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
             </fieldset>
 
             <fieldset>
