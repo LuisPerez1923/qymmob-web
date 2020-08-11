@@ -77,12 +77,17 @@
 
 
     <!--Aquí empiezan los testimoniales-->
-    <section class="testimoniales">
-        <h2>Testimoniales</h2>
-        <blockquote class="testimonial">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae recusandae rerum minima pariatur vero, quae sapiente cumque suscipit delectus doloremque maiores reiciendis dignissimos dolorum facilis, eveniet nisi repellat possimus iusto?</p>
-        </blockquote>
-        <p>- Luis "el chido"</p>
+    <section class="testimoniales seccion">
+        <div class="fondo-oscuro">
+            <div class="contenedor-testimonios">
+                <h2 class="centrar-texto">Testimoniales</h2>
+                <blockquote class="testimonial ">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae recusandae rerum minima pariatur vero, quae sapiente cumque suscipit delectus doloremque maiores reiciendis dignissimos dolorum facilis, eveniet nisi repellat possimus iusto?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae recusandae rerum minima pariatur vero, quae sapiente cumque suscipit delectus doloremque maiores reiciendis dignissimos dolorum facilis, eveniet nisi repellat possimus iusto?</p>
+                </blockquote>
+                <p class="texto-derecha">- Luis "el chido"</p>
+            </div>
+        </div>
     </section>
     <!--Aquí termimnan los testimoniales-->
 
@@ -128,39 +133,47 @@
 
     <!--Aquí termina el mapa-->
 
+    <!--Aquí empieza el separador parallax-->
+    <div class="parallax">
+
+    </div>
+    <!--Aquí termina el separador parallax-->
+
 
     <!--Aquí empieza el formulario-->
-    <section class="formulario">
-        <h2>Formulario de contacto</h2>
+    <section class="formulario seccion">
+        <h2 class="centrar-texto">Formulario de contacto</h2>
 
         <form class="contacto" action="">
             <fieldset>
                 <legend>Información Personal</legend>
 
                 <label for="nombre">Nombre(s):</label>
-                <input type="text" id="nombre" placeholder="Tu(s) Nombre(s)" required>
+                <input type="text" id="nombre" required>
 
                 <label for="apellido">Nombre(s):</label>
-                <input type="text" id="apellido" placeholder="Tus Apellidos" required>
+                <input type="text" id="apellido" required>
 
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+                <input type="email" id="email" required>
 
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+                <input type="tel" id="telefono" required>
             </fieldset>
 
             <fieldset>
                 <legend>Datos del pedido</legend>
 
                 <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" placeholder="Escribe el asunto" required>
+                <input type="text" id="asunto" required>
 
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje"></textarea>
+
+                <input type="submit" value="Enviar" class="btn btn-primary">
             </fieldset>
 
-            <input type="submit" value="Enviar" class="boton">
+           
 
         </form>
     </section>

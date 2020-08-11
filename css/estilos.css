@@ -50,6 +50,10 @@ h4 {
     text-align: center;
 }
 
+.texto-derecha{
+    text-align: right;
+}
+
 .seccion {
     margin-top: 8rem;
 }
@@ -258,6 +262,36 @@ h4 {
     transition: .5s;
 }
 
+/*TESTIMONIALES*/
+
+.testimoniales{
+    background-image: url(../img/header-mobile.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+}
+
+.fondo-oscuro{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5rem;
+}
+
+.contenedor-testimonios{
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+
+.testimoniales h2{
+    text-transform: uppercase;
+}
+
+.contenedor-testimonios blockquote{
+    line-height: 2;
+    margin: 0;
+}
 
 /* CUALIDADES */
 
@@ -319,4 +353,82 @@ h4 {
     max-width: 30rem;
     margin: 3rem auto;
     line-height: 1.5;
+}
+
+/*PARALLAX*/
+
+.parallax {
+    position:relative;
+    background: url("../img/header-mobile.jpg") no-repeat fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 300px; 
+}
+
+/*FORMULARIO DE CONTACTO*/
+
+.formulario{
+    width: 90%;
+    max-width: 80rem;
+    margin: 8rem auto;
+}
+
+.formulario h2{
+    text-transform: uppercase;
+}
+
+.formulario fieldset{
+    border-radius: 1rem;
+}
+
+.formulario fieldset:last-of-type{
+    margin-top: 2rem;
+}
+
+legend{
+    font-size: 2rem;
+    color: #333333;
+}
+
+label{
+    font-weight: 700;
+    display: block;
+    line-height: 1.5;
+}
+
+
+input:not([type="submit"]), /*las comas , separan los selectores para que se apliquen a diferentes en este caso a input, a textarea y a select*/
+textarea,
+select{ 
+    padding: 0.5rem;
+    display: block;
+    width: 100%;
+    background-color: #fff5e9;
+    margin-bottom: 1.2rem;
+    border: 1px solid #BBBBBB;
+    border-radius: 1rem;
+}
+
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+
+input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    color: #fff6eb;
+    background-color: #352c2ee8;
+}
+
+select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+textarea{
+    height: 10rem;
 }
