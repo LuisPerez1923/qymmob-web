@@ -12,15 +12,21 @@
     <link rel="stylesheet" href="css/estilos.css">
     <!-- Font Awesome Script-->
     <script src="https://kit.fontawesome.com/06beed5da1.js" crossorigin="anonymous"></script>
+    <!-- Vinculo a Documentos Js -->
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/app.js"></script>
 </head>
 
 <body>
     <!--Aquí empieza el site-header-->
     <header class="site-header inicio">
-        <div class="fixed">
+        <div class="barra fixed">
             <div class="top-header contenedor">
                 <h1><span>Q&M</span> Mobiliario</h1>
-                <i class="fas fa-bars"></i>
+                <button onclick="actionToogle()" class="menu-hamb" id="menu-hamb">
+                    <i class="fas fa-bars"></i>
+                </button >
                 <nav class="desk-navbar">
                     <a href="#">Inicio</a>
                     <a href="#">Catálogo</a>
@@ -28,7 +34,7 @@
                     <a href="#">Contácto</a>
                 </nav>
             </div>
-            <nav class="navbar">
+            <nav class="navbar" id="navbar">
                 <a href="#">Inicio</a>
                 <a href="#">Catálogo</a>
                 <a href="#">Nosotros</a>
@@ -82,8 +88,12 @@
             <div class="contenedor-testimonios">
                 <h2 class="centrar-texto">Testimoniales</h2>
                 <blockquote class="testimonial ">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae recusandae rerum minima pariatur vero, quae sapiente cumque suscipit delectus doloremque maiores reiciendis dignissimos dolorum facilis, eveniet nisi repellat possimus iusto?</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae recusandae rerum minima pariatur vero, quae sapiente cumque suscipit delectus doloremque maiores reiciendis dignissimos dolorum facilis, eveniet nisi repellat possimus iusto?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae recusandae rerum minima pariatur vero, quae sapiente cumque suscipit delectus doloremque maiores reiciendis dignissimos dolorum facilis, eveniet nisi repellat possimus
+                        iusto?
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae recusandae rerum minima pariatur vero, quae sapiente cumque suscipit delectus doloremque maiores reiciendis dignissimos dolorum facilis, eveniet nisi repellat possimus
+                        iusto?
+                    </p>
                 </blockquote>
                 <p class="texto-derecha">- Luis "el chido"</p>
             </div>
@@ -173,7 +183,7 @@
                 <input type="submit" value="Enviar" class="btn btn-primary">
             </fieldset>
 
-           
+
 
         </form>
     </section>
