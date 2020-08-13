@@ -11,12 +11,17 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
     $(".barra").css("transition", ".4s");
+    $(".contenedor").css("transition", ".4s");
     $(".bg-header").css("transition", ".6s");
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         $(".barra").css("background", "#2b2b2b");
-        $(".bg-header").css("opacity", "0.05");
+        $(".barra").css("padding-top", "0");
+        $(".contenedor").css("max-width", "1200px");
+        $(".bg-header").css("opacity", "0.5");
     } else {
-        $(".barra").css("background", "none");
+        $(".barra").css("background", "transparent");
+        $(".barra").css("padding-top", "20px");
+        $(".contenedor").css("max-width", "1000px");
         $(".bg-header").css("opacity", "1");
     }
 });
