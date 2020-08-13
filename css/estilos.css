@@ -125,10 +125,6 @@ h4 {
 
 /* Site - Header */
 
-.barra {
-    background-color: #333333;
-}
-
 .top-header {
     display: flex;
     justify-content: space-between;
