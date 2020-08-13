@@ -549,32 +549,33 @@ textarea {
 .social-media {
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 50%;
     margin: 2rem auto;
     margin-top: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .social-media a {
     text-align: center;
     text-decoration: none;
     color: white;
-    font-size: 7rem;
+    font-size: 3rem;
     transition: all 0.5s ease-in-out;
-    flex-basis: calc(50%);
+    flex-basis: calc(25% - 1rem);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
     .social-media {
-        flex-wrap: nowrap;
-        width: 50%;
+        width: 25%;
     }
 }
 
 .social-media a:hover {
-    text-decoration: none;
     color: #fff6eb;
-    font-size: 7rem;
+}
+
+.derechos {
+    font-size: 1.6rem;
 }
 
 .derechos p {
