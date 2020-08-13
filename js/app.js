@@ -19,4 +19,24 @@ $(window).scroll(function() {
         $(".barra").css("background", "none");
         $(".bg-header").css("opacity", "1");
     }
+
+    //animacion para el formulario (falta arreglar correctamente)
+    $(".formulario").css("transition", "1.4s");
+    if (document.body.scrollTop > 2150 || document.documentElement.scrollTop > 2150) {
+        $(".formulario").css("opacity", "1");
+    } 
+    else {
+        $(".formulario").css("opacity", "0");
+    }
+});
+
+/* ANIMACIÓN DEL BOTON DEL FOOTER PARA LLEGAR ARRIBA DEL TODO DE LA PÁGINA */
+	
+$(document).ready(function(){
+ 
+	$('.to-up').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 1200);
+	}); 
 });

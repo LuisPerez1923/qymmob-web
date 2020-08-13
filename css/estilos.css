@@ -449,3 +449,93 @@ select {
 textarea {
     height: 10rem;
 }
+
+#btn-enviar{
+    transition: all 0.5s ease-in-out;
+    border: 1px #fff6eb solid;
+}
+
+#btn-enviar:hover{
+    background-color: #fff6eb;
+    border: 1px #352c2ee8 solid; 
+    color: #352c2ee8;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+.site-footer{
+    background-color: #2b2b2b;
+    color: white;
+    padding: 2rem;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.fa-chevron-up{
+    display: block!important;
+    text-align: center;
+    font-size: 4rem;
+}
+	
+.fa-chevron-up:hover {
+    cursor: pointer;
+    color: #fff6eb;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 2rem auto;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    
+}
+
+.social-media a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 7rem;
+    transition: all 0.5s ease-in-out;
+    flex-basis: calc(50%);
+
+}
+
+@media (min-width: 768px){
+    .social-media {
+        flex-wrap: nowrap;
+        width: 50%;
+    }
+}
+
+
+
+.social-media a:hover{
+    text-decoration: none;
+    color: #fff6eb;
+    font-size: 7rem;
+}
+
+.derechos p {
+    line-height: 1;
+    margin: 1rem 0rem 0.5rem 0rem;
+}
+
+.derechos span {
+    margin-left: 1rem;
+    
+}
+
+.derechos span a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.derechos span a:hover{
+    color: #2ac464;
+    text-decoration: none;
+    cursor: pointer;
+}
