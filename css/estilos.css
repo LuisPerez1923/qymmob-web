@@ -133,6 +133,10 @@ h4 {
     color: #fff5e9;
 }
 
+.logo {
+    font-size: 3rem;
+}
+
 .top-header span {
     font-family: 'Russo One', sans-serif;
     color: #ff8e3d;
@@ -271,6 +275,7 @@ h4 {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .bg-imagen {
@@ -282,6 +287,48 @@ h4 {
     margin-bottom: 1.5rem;
     margin-top: 0rem;
     transition: .5s;
+}
+
+
+/* PRODUCTOS */
+
+.productos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.producto {
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .productos {
+        flex-direction: row;
+        align-items: center;
+    }
+    .producto {
+        flex: 0 0 calc(33.3% - 3rem);
+    }
+}
+
+.producto h3 {
+    text-align: center;
+}
+
+.producto p:last-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+.producto span {
+    color: #ff8e3d;
+}
+
+.ret-categoria {
+    color: #ff8e3d;
+    cursor: pointer;
 }
 
 
@@ -465,21 +512,22 @@ textarea {
     height: 10rem;
 }
 
-#btn-enviar{
+#btn-enviar {
     transition: all 0.5s ease-in-out;
     border: 1px #fff6eb solid;
 }
 
-#btn-enviar:hover{
+#btn-enviar:hover {
     background-color: #fff6eb;
-    border: 1px #352c2ee8 solid; 
+    border: 1px #352c2ee8 solid;
     color: #352c2ee8;
     cursor: pointer;
 }
 
+
 /*Footer*/
 
-.site-footer{
+.site-footer {
     background-color: #2b2b2b;
     color: white;
     padding: 2rem;
@@ -487,47 +535,43 @@ textarea {
     transition: all 0.5s ease-in-out;
 }
 
-.fa-chevron-up{
+.fa-chevron-up {
     display: block!important;
     text-align: center;
     font-size: 4rem;
 }
-	
+
 .fa-chevron-up:hover {
     cursor: pointer;
     color: #fff6eb;
 }
 
-.social-media{
+.social-media {
     display: flex;
     justify-content: space-between;
     width: 65%;
     margin: 2rem auto;
     margin-top: 1rem;
     flex-wrap: wrap;
-    
 }
 
-.social-media a{
+.social-media a {
     text-align: center;
     text-decoration: none;
     color: white;
     font-size: 7rem;
     transition: all 0.5s ease-in-out;
     flex-basis: calc(50%);
-
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .social-media {
         flex-wrap: nowrap;
         width: 50%;
     }
 }
 
-
-
-.social-media a:hover{
+.social-media a:hover {
     text-decoration: none;
     color: #fff6eb;
     font-size: 7rem;
@@ -540,16 +584,15 @@ textarea {
 
 .derechos span {
     margin-left: 1rem;
-    
 }
 
-.derechos span a{
+.derechos span a {
     color: white;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
 
-.derechos span a:hover{
+.derechos span a:hover {
     color: #2ac464;
     text-decoration: none;
     cursor: pointer;
